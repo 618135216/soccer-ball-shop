@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KICKOFF - 축구공 전문 쇼핑몰</title>
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="bar">
+    <a href="#home" class="logo"><img src="img/logo.svg" alt="" width="32" height="32"><span>KICKOFF</span></a>
+    <form id="searchForm" class="search" role="search">
+      <input id="searchInput" type="search" placeholder="축구공 검색" aria-label="상품 검색">
+      <button type="submit">검색</button>
+    </form>
+    <div id="userMenu" class="user-menu"></div>
+  </div>
+  <nav class="nav" aria-label="주 메뉴">
+    <a href="#home">홈</a>
+    <a href="#shop">전체 상품</a>
+    <a href="#shop/경기용">경기용</a>
+    <a href="#shop/풋살볼">풋살볼</a>
+    <a href="#shop/훈련용">훈련용</a>
+    <a href="#shop/미니볼">미니볼</a>
+    <a href="#cart" class="cart-link">장바구니 <b id="cartCount">0</b></a>
+  </nav>
+</header>
+
+<main id="app">
+  <section id="view-home" class="view">
+    <div class="slider" id="slider" aria-roledescription="carousel">
+      <img src="img/hero1.svg" alt="화창한 날의 축구장과 축구공" class="slide on">
+      <img src="img/hero2.svg" alt="밤 경기장 조명 아래의 축구공" class="slide">
+      <img src="img/hero3.svg" alt="실내 풋살 코트 위의 풋살볼" class="slide">
+      <img src="img/hero4.svg" alt="KICKOFF 축구공 클로즈업" class="slide">
+      <div class="slide-text"><h1>첫 킥을 위한 단 하나의 공</h1><p>축구 · 풋살 · 훈련까지, KICKOFF</p><a class="btn" href="#shop">상품 보러가기</a></div>
+      <div class="dots" id="dots"></div>
+    </div>
+    <div class="wrap">
+      <div class="notice"><b>신규 가입 3,000P</b> 지급! 구매할 때마다 등급별로 최대 7% 적립돼요.</div>
+      <h2 class="title">추천 상품</h2>
+      <div class="grid" id="homeGrid"></div>
+    </div>
+  </section>
+
+  <section id="view-shop" class="view wrap">
+    <h2 class="title" id="shopTitle">전체 상품</h2>
+    <div class="filters" id="filters"></div>
+    <p id="shopCount" class="muted"></p>
+    <div class="grid" id="shopGrid"></div>
+  </section>
+
+  <section id="view-detail" class="view wrap">
+    <div id="detailBox" class="detail"></div>
+  </section>
+
+  <section id="view-cart" class="view wrap">
+    <h2 class="title">장바구니</h2>
+    <div id="cartBox"></div>
+  </section>
+
+  <section id="view-checkout" class="view wrap narrow">
+    <h2 class="title">체험 결제</h2>
+    <p class="muted">실제 결제는 이루어지지 않고, 주문 내역만 저장됩니다.</p>
+    <div id="checkoutBox"></div>
+  </section>
+
+  <section id="view-login" class="view wrap narrow">
+    <h2 class="title">로그인</h2>
+    <form id="loginForm" class="form">
+      <label>아이디<input name="id" required autocomplete="username"></label>
+      <label>비밀번호<input name="pw" type="password" required autocomplete="current-password"></label>
+      <p class="err" id="loginErr"></p>
+      <button class="btn" type="submit">로그인</button>
+      <p class="muted">아직 회원이 아니신가요? <a href="#signup">회원가입</a></p>
+    </form>
+  </section>
+
+  <section id="view-signup" class="view wrap narrow">
+    <h2 class="title">회원가입</h2>
+    <form id="signupForm" class="form">
+      <label>아이디 (영문·숫자 4자 이상)<input name="id" required minlength="4" pattern="[A-Za-z0-9]{4,}" autocomplete="username"></label>
+      <label>비밀번호 (6자 이상)<input name="pw" type="password" required minlength="6" autocomplete="new-password"></label>
+      <label>비밀번호 확인<input name="pw2" type="password" required autocomplete="new-password"></label>
+      <label>이름<input name="name" required></label>
+      <label>이메일<input name="email" type="email" required></label>
+      <p class="err" id="signupErr"></p>
+      <button class="btn" type="submit">가입하고 3,000P 받기</button>
+    </form>
+  </section>
+
+  <section id="view-mypage" class="view wrap">
+    <h2 class="title">마이페이지</h2>
+    <div id="myBox"></div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <b>KICKOFF</b> · 축구공 전문 쇼핑몰<br>
+    본 사이트는 수업 실습용으로 실제 결제가 이루어지지 않습니다.<br>
+    <small>© 2026 KICKOFF</small>
+  </div>
+</footer>
+<div id="toast" class="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
