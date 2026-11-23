@@ -2,14 +2,14 @@
 const CATEGORIES = ["경기용", "풋살볼", "훈련용", "미니볼"];
 
 const PRODUCTS = [
-  { id: 1, name: "KICKOFF 프로 매치볼 5호", category: "경기용", price: 59000, stock: 30, image: "img/p1.svg", desc: "열접합 패널로 물에 젖어도 무게 변화가 적은 공식 경기용 5호 공입니다." },
-  { id: 2, name: "KICKOFF 스타디움 레플리카 5호", category: "경기용", price: 39000, stock: 40, image: "img/p2.svg", desc: "조기축구와 동호회 경기에 알맞은 합리적인 가격의 5호 공입니다." },
-  { id: 3, name: "KICKOFF 실내 풋살볼 4호", category: "풋살볼", price: 35000, stock: 25, image: "img/p3.svg", desc: "바운드가 낮게 설계되어 실내 코트에서 패스 연결이 쉬운 풋살볼입니다." },
-  { id: 4, name: "KICKOFF 코트 그립 풋살볼 4호", category: "풋살볼", price: 29000, stock: 35, image: "img/p4.svg", desc: "표면 그립이 좋아 인조잔디와 우레탄 코트 모두에서 안정적입니다." },
-  { id: 5, name: "KICKOFF 트레이닝 연습구 5호", category: "훈련용", price: 19000, stock: 60, image: "img/p5.svg", desc: "내구성이 좋은 합성 소재로 매일 하는 개인 훈련에 적합합니다." },
-  { id: 6, name: "KICKOFF 리바운드 훈련볼 4호", category: "훈련용", price: 24000, stock: 0, image: "img/p6.svg", desc: "벽 패스와 드리블 연습에 맞춘 반발력 높은 훈련용 공입니다." },
-  { id: 7, name: "KICKOFF 미니 스킬볼 1호", category: "미니볼", price: 12000, stock: 80, image: "img/p7.svg", desc: "리프팅과 발재간 연습용 미니볼입니다. 가방에 쏙 들어가요." },
-  { id: 8, name: "KICKOFF 사인용 기념볼", category: "미니볼", price: 15000, stock: 50, image: "img/p8.svg", desc: "친구와 팀원의 사인을 받아 보관하기 좋은 기념용 미니볼입니다." }
+  { id: 1, name: "KICKOFF 프로 매치볼 5호", category: "경기용", price: 59000, stock: 30, image: "img/p1.jpg", desc: "열접합 패널로 물에 젖어도 무게 변화가 적은 공식 경기용 5호 공입니다." },
+  { id: 2, name: "KICKOFF 스타디움 레플리카 5호", category: "경기용", price: 39000, stock: 40, image: "img/p2.jpg", desc: "조기축구와 동호회 경기에 알맞은 합리적인 가격의 5호 공입니다." },
+  { id: 3, name: "KICKOFF 실내 풋살볼 4호", category: "풋살볼", price: 35000, stock: 25, image: "img/p3.jpg", desc: "바운드가 낮게 설계되어 실내 코트에서 패스 연결이 쉬운 풋살볼입니다." },
+  { id: 4, name: "KICKOFF 코트 그립 풋살볼 4호", category: "풋살볼", price: 29000, stock: 35, image: "img/p4.jpg", desc: "표면 그립이 좋아 인조잔디와 우레탄 코트 모두에서 안정적입니다." },
+  { id: 5, name: "KICKOFF 트레이닝 연습구 5호", category: "훈련용", price: 19000, stock: 60, image: "img/p5.jpg", desc: "내구성이 좋은 합성 소재로 매일 하는 개인 훈련에 적합합니다." },
+  { id: 6, name: "KICKOFF 리바운드 훈련볼 4호", category: "훈련용", price: 24000, stock: 0, image: "img/p6.jpg", desc: "벽 패스와 드리블 연습에 맞춘 반발력 높은 훈련용 공입니다." },
+  { id: 7, name: "KICKOFF 미니 스킬볼 1호", category: "미니볼", price: 12000, stock: 80, image: "img/p7.jpg", desc: "리프팅과 발재간 연습용 미니볼입니다. 가방에 쏙 들어가요." },
+  { id: 8, name: "KICKOFF 사인용 기념볼", category: "미니볼", price: 15000, stock: 50, image: "img/p8.jpg", desc: "친구와 팀원의 사인을 받아 보관하기 좋은 기념용 미니볼입니다." }
 ];
 
 const GRADES = [

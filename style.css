@@ -40,7 +40,7 @@ main{flex:1;width:100%}
 .notice{background:var(--sky-l);border-left:4px solid var(--sky);padding:12px 14px;border-radius:6px;margin-bottom:20px}
 .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .card{border:1px solid var(--line);border-radius:12px;overflow:hidden;background:#fff;display:flex;flex-direction:column;min-width:0}
-.card img{width:100%;aspect-ratio:1;object-fit:cover;background:var(--sky-l)}
+.card img{width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border-bottom:1px solid var(--line)}
 .card .in{padding:10px 12px;display:flex;flex-direction:column;gap:4px;flex:1}
 .tag{font-size:12px;color:var(--sky-d)}
 .card .nm{font-weight:700;font-size:15px;word-break:keep-all}
@@ -50,7 +50,7 @@ main{flex:1;width:100%}
 .filters button{border:1px solid var(--sky);background:#fff;color:var(--sky-d);padding:6px 14px;border-radius:16px;cursor:pointer}
 .filters button.on{background:var(--sky);color:#fff}
 .detail{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.detail img{width:100%;border-radius:12px;border:1px solid var(--line)}
+.detail img{width:100%;aspect-ratio:1;object-fit:contain;background:#fff;border-radius:12px;border:1px solid var(--line)}
 .detail h2{font-size:24px;margin:4px 0 8px}
 .detail .price{font-size:24px;margin:10px 0}
 .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
@@ -59,7 +59,7 @@ main{flex:1;width:100%}
 .qty span{min-width:36px;text-align:center}
 .tbl{width:100%;border-collapse:collapse}
 .tbl th,.tbl td{padding:10px 6px;border-bottom:1px solid var(--line);text-align:left;font-size:14px;vertical-align:middle}
-.tbl img{width:56px;height:56px;border-radius:8px;object-fit:cover}
+.tbl img{width:56px;height:56px;border-radius:8px;object-fit:contain;background:#fff;border:1px solid var(--line)}
 .sum{margin-top:16px;padding:14px;background:var(--sky-l);border-radius:10px;text-align:right}
 .sum .big{font-size:22px;font-weight:900;color:var(--sky-d)}
 .box{border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:16px}
